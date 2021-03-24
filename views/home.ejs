@@ -1,0 +1,44 @@
+<% include partials/header %>
+
+    <div class="row">
+        <div class="search-area col s10 offset-s1">
+            <p>Search using the engine below (start typing...)</p>
+
+            <form>
+                <input type="text" name="query" minlength="1">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="results-area col s10 offset-s1 grey lighten-3">
+            <p>Results are listed below:</p>
+            <div class="results-load">
+                <table id="update_table">
+                    <thead>
+                        <tr>
+                            <!-- Static row names, as this is meant to show only data from the products table -->
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th># Available</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <% include partials/footer %>
